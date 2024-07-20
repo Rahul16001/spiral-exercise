@@ -23,6 +23,7 @@ class Spiral {
                 y++;
             }
             y--;
+            x++;
             right--;
 
             while(x < down && value <= (rows*columns))
@@ -32,6 +33,7 @@ class Spiral {
                 x++;
             }
             x--;
+            y--;
             down--;
 
             while(y > left && value <= (rows*columns))
@@ -41,6 +43,7 @@ class Spiral {
                 y--;
             }
             y++;
+            x--;
             left++;
 
             while(x > up && value <= (rows*columns))
@@ -50,6 +53,7 @@ class Spiral {
                 x--;
             }
             x++;
+            y++;
             up++;
         }
 
